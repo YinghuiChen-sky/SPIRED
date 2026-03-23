@@ -70,9 +70,9 @@ echo -e "Device: \e[1;31m${device}\e[0m"
 # predict Cα protein structure
 conda activate spired
 # conda activate spired_fitness
-/lustre/home/yhchen/anaconda3/envs/spired/bin/python ${SPIRED_DIR}/run_SPIRED.py --fasta_file ${input} --model_dir ${model_dir} --saved_folder ${folder} --device ${device}
+python ${SPIRED_DIR}/run_SPIRED.py --fasta_file ${input} --model_dir ${model_dir} --saved_folder ${folder} --device ${device}
 
 # predict full-atom protein structure by GDFold2
 # conda activate gdfold2
-/lustre/home/yhchen/anaconda3/envs/spired/bin/python ${SPIRED_DIR}/scripts/GDFold2/fold.py ${input} ${folder} -d ${device}
-/lustre/home/yhchen/anaconda3/envs/spired/bin/python ${SPIRED_DIR}/scripts/GDFold2/relax.py --input ${input} --output ${folder}
+python ${SPIRED_DIR}/scripts/GDFold2/fold.py ${input} ${folder} -d ${device}
+python ${SPIRED_DIR}/scripts/GDFold2/relax.py --input ${input} --output ${folder}

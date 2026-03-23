@@ -1,5 +1,5 @@
 <h1 align="center">SPIRED</h1>
-<p align="center">An end-to-end framework for the prediction of protein structure and fitness from single sequence</p>
+<p align="center">**An end-to-end framework for the prediction of protein structure and fitness** from single sequence</p>
 
 ![SPIRED](figures/SPIRED_Model_Architect.png)
 
