@@ -9,7 +9,7 @@
 
 ```bash
 git clone https://github.com/YinghuiChen-sky/SPIRED.git
-cd SPIRED-main
+cd SPIRED
 ```
 
 2. Download the SPIRED / SPIRED-Fitness / SPIRED-Stab [model parameters](https://doi.org/10.5281/zenodo.12560925) and place them in the `./model` folder.
