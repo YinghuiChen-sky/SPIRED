@@ -49,13 +49,13 @@ conda install pyrosetta=2023.26
   `-i` input FASTA file, `-o` output folder, `-m` model directory (default: `./model`), `-d` device (default: `cpu`, e.g. `cuda:0`).
 
 ```bash
-# run SPIRED 
+# run SPIRED for protein structure prediction
 bash run_spired.sh -i example_spired/test.fasta -m ./model -o example_spired -d cuda:0
 
-# run SPIRED-Fitness 
+# run SPIRED-Fitness for mutational effect (fitness) prediction
 bash run_spired_fitness.sh -i example_fitness/test.fasta -m ./model -o example_fitness -d cuda:0
 
-# run SPIRED-Stab
+# run SPIRED-Stab for stability change prediction
 bash run_spired_stab.sh -i example_stab/test.fasta -m ./model -o example_stab -d cuda:0
 ```
 
