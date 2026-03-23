@@ -1,20 +1,23 @@
 <h1 align="center">SPIRED</h1>
-<p align="center">**An end-to-end framework for the prediction of protein structure and fitness** from single sequence</p>
+<p align="center">An end-to-end framework for the prediction of protein structure and fitness from single sequence</p>
 
 ![SPIRED](figures/SPIRED_Model_Architect.png)
 
 ## Download
 
-1. Download `SPIRED`
+1. Download **SPIRED** codes from github
 
 ```bash
 git clone https://github.com/YinghuiChen-sky/SPIRED.git
 cd SPIRED-main
 ```
 
-2. Download the SPIRED / SPIRED-Fitness / SPIRED-Stab [model parameters](https://doi.org/10.5281/zenodo.12560925) and place them in the `model` folder. 
+2. Download the SPIRED / SPIRED-Fitness / SPIRED-Stab [model parameters](https://doi.org/10.5281/zenodo.12560925) and place them in the `./model` folder.
+```
+mv SPIRED.pth SPIRED-Fitness.pth SPIRED-Stab.pth ./model
+```
 
-3. Download ESM-3B, ESM2-650M and ESMIF checkpoints, and move checkpoints to `model` dir.
+3. Download ESM-3B, ESM2-650M and ESMIF checkpoints, and move checkpoints to `./model` dir.
 ```
 wget -c https://dl.fbaipublicfiles.com/fair-esm/models/esm2_t36_3B_UR50D.pt
 wget -c https://dl.fbaipublicfiles.com/fair-esm/regression/esm2_t36_3B_UR50D-contact-regression.pt
@@ -25,7 +28,7 @@ wget -c https://dl.fbaipublicfiles.com/fair-esm/models/esm1v_t33_650M_UR90S_2.pt
 wget -c https://dl.fbaipublicfiles.com/fair-esm/models/esm1v_t33_650M_UR90S_3.pt
 wget -c https://dl.fbaipublicfiles.com/fair-esm/models/esm1v_t33_650M_UR90S_4.pt
 wget -c https://dl.fbaipublicfiles.com/fair-esm/models/esm1v_t33_650M_UR90S_5.pt
-mv esm*.pt model
+mv esm*.pt ./model
 ```
 
 ## Install software on Linux (Conda)
