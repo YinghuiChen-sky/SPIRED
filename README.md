@@ -60,9 +60,9 @@ bash run_spired_stab.sh -i example_stab/test.fasta -m ./model -o example_stab -d
 ```
 
 ## Reference
-
-- Yinghui Chen, Yunxin Xu, Di Liu, Yaoguang Xing & Haipeng Gong. An end-to-end framework for the prediction of protein structure and fitness from single sequence. Nature Communications, 15(1):7400, 2024. DOI:[10.1038/s41467-024-51776-x](https://doi.org/10.1038/s41467-024-51776-x)
-- Tianyu Mi, Nan Xiao and Haipeng Gong. GDFold2: A fast and parallelizable protein folding environment with freely defined objective functions. Protein Science, 34(2):e70041, 2025.  DOI:[10.1002/pro.70041](https://doi.org/10.1002/pro.70041)
+(#: co-first author; *: corresponding author)   
+- Yinghui Chen#, Yunxin Xu#, Di Liu, Yaoguang Xing & Haipeng Gong*. An end-to-end framework for the prediction of protein structure and fitness from single sequence. Nature Communications, 15(1):7400, 2024. DOI:[10.1038/s41467-024-51776-x](https://doi.org/10.1038/s41467-024-51776-x)
+- Tianyu Mi, Nan Xiao and Haipeng Gong*. GDFold2: A fast and parallelizable protein folding environment with freely defined objective functions. Protein Science, 34(2):e70041, 2025.  DOI:[10.1002/pro.70041](https://doi.org/10.1002/pro.70041)
 
 ## Link
 - [SPIRED-Fitness Server](https://structpred.life.tsinghua.edu.cn/server_spired_fitness.html)
