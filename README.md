@@ -31,12 +31,12 @@ wget -c https://dl.fbaipublicfiles.com/fair-esm/models/esm1v_t33_650M_UR90S_5.pt
 mv esm*.pt ./model
 ```
 
-## Install software on Linux (Conda)
-install through `environment/spired_environment.yml`
+## Install Conda Environment for SPIRED on Linux 
+Install through `environment/spired_environment.yml`
 ```
 conda env create -f environment/spired_environment.yml
 ```
-or you can install step by step following commands below
+Or you can install step by step following commands below
 ```
 conda create -n spired python=3.11
 conda activate spired
@@ -57,10 +57,10 @@ conda install pyrosetta=2023.26
 # run SPIRED for protein structure prediction
 bash run_spired.sh -i example_spired/test.fasta -m ./model -o example_spired -d cuda:0
 
-# run SPIRED-Fitness for mutational effect (fitness) prediction
+# run SPIRED-Fitness for mutational effect (fitness) prediction + structure prediction
 bash run_spired_fitness.sh -i example_fitness/test.fasta -m ./model -o example_fitness -d cuda:0
 
-# run SPIRED-Stab for stability change prediction
+# run SPIRED-Stab for stability change prediction + structure prediction
 bash run_spired_stab.sh -i example_stab/test.fasta -m ./model -o example_stab -d cuda:0
 ```
 
@@ -73,3 +73,4 @@ bash run_spired_stab.sh -i example_stab/test.fasta -m ./model -o example_stab -d
 - [SPIRED-Fitness Server](https://structpred.life.tsinghua.edu.cn/server_spired_fitness.html)
 - [SPIRED-Stab Server](https://structpred.life.tsinghua.edu.cn/server_spired_stab.html)
 - [Original SPIRED-Fitness Github](https://github.com/Gonglab-THU/SPIRED-Fitness)
+- If you are interested in training codes and training data examples of SPIRED/SPIRED-Fitness/SPIRED-Stab, you can follow `train_code` dir at [Original SPIRED-Fitness Github](https://github.com/Gonglab-THU/SPIRED-Fitness)
