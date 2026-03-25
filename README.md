@@ -32,6 +32,11 @@ mv esm*.pt ./model
 ```
 
 ## Install software on Linux (Conda)
+install through `environment/spired_environment.yml`
+```
+conda env create -f environment/spired_environment.yml
+```
+or you can install step by step following commands below
 ```
 conda create -n spired python=3.11
 conda activate spired
